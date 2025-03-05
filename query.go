@@ -54,11 +54,12 @@ type QueryOptions struct {
 }
 
 type QueryOptionsParameter struct {
-	Global bool   `json:"global"`
-	Type   string `json:"type"`
-	Name   string `json:"name"`
-	Value  any    `json:"value"`
-	Title  string `json:"title"`
+	Global      bool   `json:"global"`
+	Type        string `json:"type"`
+	Name        string `json:"name"`
+	Value       any    `json:"value"`
+	Title       string `json:"title"`
+	EnumOptions string `json:"enumOptions,omitempty"`
 }
 
 type QueueSchedule struct {
